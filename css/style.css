@@ -1,0 +1,471 @@
+/*
+Theme Name: Focal
+Theme URI: #
+Author: Sharif Ahmed
+Author URI: #
+Description: Hey! This is John Doe, a professional web and graphic designer. You can check my full portfolio here or/and download my resume.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: designer, portfolio, web, graphic
+Text Domain: focal
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* typography */
+@font-face {
+	font-family: Roboto-Bold;
+	src: url('fonts/Roboto-Bold.ttf');
+}
+@font-face {
+	font-family: Roboto-Regular;
+	src: url('fonts/Roboto-Regular.ttf');
+}
+h1,
+h2,
+h3{
+	font-family: Roboto-Bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+h4 {
+	font-family: Roboto-Bold;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+h2,
+h3 {
+	color: #566366;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 20px;
+}
+h4 {
+	font-size: 16px;
+}
+p {
+	font-family: Roboto-Regular;
+	font-size: 16px;
+	color: #919191;
+	line-height: 1.3em;
+}
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* header section starts */
+.main-head {
+	position: relative;
+}
+.head-title {
+	position: absolute;
+	top: 45%;
+	left: 30%;
+	text-align: center;
+	color: #FFFFFF;
+}
+.head-title h1 {
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	font-size: 3vw;
+	line-height: 1.5em;
+	letter-spacing: 2px;
+}
+.btn-trans {
+	display: inline-block;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	border: 1px solid #FFFFFF;
+	letter-spacing: 1px;
+	font-family: Roboto-Bold;
+	color: #FFFFFF;
+	transition: .3s;
+}
+.head-title .btn-trans:hover {
+	background-color: #2ecc71
+}
+.main-nav {
+	border-radius: 0;
+	background-color: #252e30;
+	border: none;
+}
+.logo {
+	margin-top: 5px;
+}
+
+.affix { /* neccessary customization for affix */
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+.navbar-brand {
+	padding-top: 0;
+	padding-bottom: 0;
+	border: none;
+}
+.main-nav ul {
+	margin-top: 7px;
+}
+.main-nav ul li a {
+	display: inline-block;
+	padding: 10px;
+	font-family: Roboto-Bold;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.media-left > li > a:hover,
+.media-left > .active > a {
+	color: #2ecc71 !important;
+	background-color: transparent !important;
+}
+
+/* intro section starts */
+.intro-section {
+	margin: 80px 0;
+}
+
+
+
+/* about section starts */
+.about-section > .container-fluid {
+	padding-left: 0;
+	background-color: #f2f2f1;
+}
+.about-text {
+	padding: 30px 100px 0;
+	overflow: hidden;
+}
+.about-text h2 {
+	margin-bottom: 40px;
+}
+.about-text p {}
+.about-section i.fa {
+	margin-top: 20px;
+	margin-right: 20px;
+	font-size: 2.5em;
+	color: #2ecc71;
+}
+.about-icon {
+	float: left;
+}
+.icon-des {
+	overflow: hidden;
+}
+.no-left {
+	padding-left: 0;
+	padding-right: 50px;
+}
+
+
+/* Skill section starts */
+.skill-section {
+	padding: 80px 0;
+}
+.skill-section .btn-trans {
+	color: #2ecc71;
+	border-color: #2ecc71;
+}
+.skill-section .btn-trans:hover {
+	color: #FFFFFF;
+	background-color: #2ecc71;
+}
+.skill-section .col-md-6:last-child {
+	margin-top: 20px;
+}
+.skill-section .progress {
+	border-radius: 0;
+	margin-bottom: 40px;
+}
+.progress-bar-done {
+	padding-right: 10px;
+	margin-bottom: 10px;
+	text-align: right;
+	background-color: #2ecc71;
+}
+
+/* resume section starts */
+.resume-section {
+	position: relative;
+	background-color: #f2f2f1;
+}
+.resume-section:after {
+	position: absolute;
+	left: 50%;
+	margin: 0 auto;
+	content: '';
+	border-top: 20px solid #f2f2f1;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+}
+.resume-section > .container {
+	padding: 80px 0;
+}
+.resume-section .btn-trans {
+	margin-top: 30px;
+	color: #2ecc71;
+	border-color: #2ecc71;
+}
+.resume-section .btn-trans:hover {
+	color: #FFFFFF;
+	background-color: #2ecc71;
+}
+
+/* education section starts */
+.edu-section {
+	padding: 80px 0 0;
+}
+.edu-section h4 {
+	margin: 18px 0;
+	color: #919191;
+}
+.edu-section h4 > span {
+	font-family: Roboto-Regular;
+}
+.edu-section h4 + span {
+	padding: 5px 10px;
+	font-family: Roboto-Bold;
+	color: #FFFFFF;
+	background-color: #2ecc71;
+}
+.edu-section .row {
+	margin-bottom: 50px;
+}
+.edu-section .col-md-6:last-child {
+	margin-top: 40px;
+	padding-left: 40px;
+}
+.edu-section .col-md-6:last-child hr {
+	margin: 30px 0;
+	border-top-color: #cccccc;
+}
+.edu-section hr {
+	margin: 30px 0;
+	border-top-color: #cccccc;
+}
+
+/* quote area starts */
+.quote-area {
+	position: relative;
+	padding: 80px 0;
+	background-color: #f2f2f1;
+	overflow: hidden;
+}
+.quote-text p > i {
+	font-size: 18px;
+}
+.quote-text p > strong {
+	display: inline-block;
+	margin: 30px 0;
+	font-family: Roboto-Bold;
+	font-size: 18px;
+	color: #566366;
+}
+.circles { /* indicators style */
+	bottom: 0;
+}
+.circles li {
+	border-color: #2ecc71;
+}
+.circles .active {
+	background-color: #2ecc71;
+}
+
+
+/* portfolio section starts */
+.portfolio-section {
+	padding: 50px 0;
+}
+.portfolio-section p {
+	width: 80%;
+	margin: 30px auto 50px;
+}
+.gallery-nav {
+	padding-left: 30px;
+	padding-top: 15px;
+	background-color: #252e30;
+	overflow: hidden;
+	color: #FFFFFF;
+}
+.gallery-nav ul > h4, .current a {
+	color: #FFFFFF;
+}
+.gallery-nav ul {}
+.gallery-nav ul li a {
+	display: inline-block;
+	color: #919191;
+	transition: .5s;
+}
+.gallery-nav ul li.current a {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.portfolio-section ul li a:hover {
+	background-color: transparent;
+	color: #FFFFFF;
+}
+.portfolio-section .col-sm-4 {
+	margin-bottom: 30px;
+}
+.wrapper {
+	position: relative;
+	cursor: pointer;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: rgba(46,204,113,.75);
+	color: #FFFFFF;
+	overflow: hidden;
+	opacity: 0;
+	transition: .3s;
+}
+.overlay i.fa {  /* media query to fix top position */
+	position: absolute;
+	top: 48%;
+	font-size: 2em;
+}
+.wrapper:hover .overlay {
+	opacity: 1;
+}
+.modal .modal-footer { /* modal plugin style */
+	text-align: inherit;
+}
+.modal-content:hover .btn-trans {
+	background-color: #2ecc71;
+}
+
+/* contact me section starts */
+.contact {
+	padding: 80px 0;
+	background-color: #252e30;
+	color: #FFFFFF;
+}
+.contact h2 {
+	color: #FFFFFF;
+}
+.contact address {
+	font-size: 16px;
+	color: #919191;
+}
+.contact address span {
+	color: #FFFFFF;
+}
+.contact address a {
+	color: #919191;
+}
+
+.contact form {
+	margin-top: 40px;
+	padding-left: 20px;
+}
+.contact .input-mod {
+	border-width: 0;
+	border-radius: 0;
+	background-color: #4b5456;
+}
+.contact form label {
+	font-family: Roboto-Regular;
+	font-size: 16px;
+	font-weight: normal;
+	text-transform: capitalize;
+}
+.contact .btn-mod {
+	padding: 10px 20px;
+	border-radius: 0;
+	background-color: #191f21;
+	font-family: Roboto-Bold;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	transition: .3s;
+}
+.contact .btn-mod:hover {
+	background-color: #2ecc71;
+}
+
+/* main footer section starts */
+.main-foo {
+	padding: 40px 0;
+	background-color: #191f21;
+}
+.main-foo i.fa {
+	width: 30px;
+	height: 30px;
+	padding: 7px;
+	border-radius: 50%;
+	background-color: #4b5456;
+	font-size: 16px;
+	color: #191f21;
+	transition: .3s;
+}
+.main-foo i.fa:hover {
+	color: #FFFFFF;
+}
+
+@media all and (max-width: 1200px) {
+	.gallery-nav ul li a {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
+@media all and (max-width: 1000px) {
+	.navbar-collapse {
+		padding-left: 0;
+	}
+	.main-nav ul li:first-child a {
+		padding-left: 0;
+	}
+	.media-left {
+		float: left !important;
+	}
+	.gallery-nav {
+		padding-top: 0;
+	}
+	.gallery-nav ul li a {
+		padding-top: 0;
+		padding-bottom: 3px;
+	}
+}
+@media all and (max-width: 768px) {
+	.navbar-collapse {
+		padding-left: inherit;
+	}
+	.overlay i.fa {  /* media query to fix top position */
+		position: absolute;
+		top: 48%;
+		font-size: 1em;
+	}
+	.head-title {
+		top: 20%;
+	}
+	.btn-trans {
+		padding: 5px 10px;
+	}
+	.media-left {
+		float: left !important;
+	}
+	.about-text {
+		padding: 30px;
+	}
+	.gallery-nav {
+		text-align: center;
+	}
+	.gallery-nav ul li {
+		display: inline-block;
+	}
+	.contact form {
+		padding-left: 0;
+	}
+}
